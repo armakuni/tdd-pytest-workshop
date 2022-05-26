@@ -19,7 +19,7 @@
 				"python.linting.pydocstylePath": "/usr/local/py-utils/bin/pydocstyle",
 				"python.linting.pylintPath": "/usr/local/py-utils/bin/pylint",
 				"terminal.integrated.env.linux": {
-					"PYTHONPATH": "${workspaceFolder}/src;${workspaceFolder}/tests"
+					"PYTHONPATH": "./src:./test"
 				}
 			},
       // Add the IDs of extensions you want installed when the container is created.
