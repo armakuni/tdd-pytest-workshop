@@ -21,7 +21,7 @@
 			},
       // Add the IDs of extensions you want installed when the container is created.
       "extensions": [
-        "MS-vsliveshare.vsliveshare-pack",
+        "ms-vsliveshare.vsliveshare-pack",
         "ms-python.python",
         "ms-python.vscode-pylance"
       ]
