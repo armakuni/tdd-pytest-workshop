@@ -9,7 +9,7 @@
 				"python.defaultInterpreterPath": "/usr/local/bin/python",
 				"python.linting.enabled": true,
 				"python.linting.pylintEnabled": true,
-				"python.formatting.autopep8Path": "/usr/local/py-utils/bin/autopep8",
+				"python.formatting.autopep8Path": "/usr/local/py-utils/bin/autopep8", 
 				"python.formatting.blackPath": "/usr/local/py-utils/bin/black",
 				"python.formatting.yapfPath": "/usr/local/py-utils/bin/yapf",
 				"python.linting.banditPath": "/usr/local/py-utils/bin/bandit",
@@ -17,7 +17,10 @@
 				"python.linting.mypyPath": "/usr/local/py-utils/bin/mypy",
 				"python.linting.pycodestylePath": "/usr/local/py-utils/bin/pycodestyle",
 				"python.linting.pydocstylePath": "/usr/local/py-utils/bin/pydocstyle",
-				"python.linting.pylintPath": "/usr/local/py-utils/bin/pylint"
+				"python.linting.pylintPath": "/usr/local/py-utils/bin/pylint",
+				"terminal.integrated.env.linux": {
+					"PYTHONPATH": "${workspaceFolder}/src;${workspaceFolder}/tests"
+				}
 			},
       // Add the IDs of extensions you want installed when the container is created.
       "extensions": [
@@ -26,5 +29,7 @@
         "ms-python.vscode-pylance"
       ]
     }
-  }
+  },
+	"onCreateCommand": "apt update && apt install git -y",
+	"postCreateCommand": "pip install pytest"
 }
