@@ -1,6 +1,6 @@
 import random
 
-from cute_animal import CuteAnimal
+from .cute_animal import CuteAnimal
 
 
 class AnimalTooCuteException(Exception):
